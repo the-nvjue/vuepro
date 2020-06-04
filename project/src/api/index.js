@@ -5,7 +5,8 @@ axios.defaults.timeout = 5000
 
 //请求拦截
 axios.interceptors.request.use((config) => {
-    // console.log('加载中');
+    config.headers.Authorization = window.sessionStorage.getItem('token')
+    // console.log(config.headers.Authorization);
     return config
 })
 //响应拦截
