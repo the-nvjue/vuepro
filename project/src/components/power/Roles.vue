@@ -308,7 +308,6 @@
             },
             //点击为角色分配角色
             async allotRights(){
-
                 const keys = [
                     ...this.$refs.treeRef.getCheckedKeys(),
                     ...this.$refs.treeRef.getHalfCheckedKeys()

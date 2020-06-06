@@ -13,6 +13,10 @@ import './assets/css/global.css'
 import './assets/css/iconfont.css'
 //axios
 import axios from './api'
+//
+import TreeTable from 'vue-table-with-tree-grid'
+Vue.component('tree-table',TreeTable)
+
 
 Vue.prototype.$http = axios
 
