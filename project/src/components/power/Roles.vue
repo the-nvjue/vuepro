@@ -235,7 +235,6 @@
                 if (res.meta.status !== 200) return this.$message.error('查询用户信息失败')
                 this.editRoleForm = res.data
                 this.editRoleVisible = true
-
             },
             //关闭修改加用户弹框
             editRoleClosed(){
